@@ -1,0 +1,60 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="afl4.css">
+        <script src="afl4.js"></script>
+        <title> Fjerde kursusgang! </title>
+    </head>
+
+
+<body>
+
+    <header class="headerClass1">
+        <h1 align="center"> Javascript Site </h1>
+    </header>
+
+
+    <h1 id="but1"> Klik på knappen for at skifte </h1>
+    <h1 id="but2"> </h1>
+    <h1 id="but3"> </h1>
+
+    <script>
+
+       
+        var title1      = "Min blog : 1"; 
+        var overskrift1 = "Første indlæg";
+        var indhold1    = "Dette er det første indlæg i min blog.";
+
+        var title2      = "Min blog : 2"; 
+        var overskrift2 = "Andet indlæg";
+        var indhold2    = "Dette er det andet indlæg i min blog.";
+        var aktiv = 1;
+
+
+
+    function aktivFunction(){
+    
+    if(aktiv==1){
+        document.getElementById("but1").innerHTML= title1;
+        document.getElementById("but2").innerHTML= indhold1;
+        document.getElementById("but3").innerHTML= overskrift1;
+        aktiv = 2;
+        return this;
+    }else{
+        document.getElementById("but1").innerHTML= title2;
+        document.getElementById("but2").innerHTML= indhold2;
+        document.getElementById("but3").innerHTML= overskrift2;
+        aktiv = 1;
+        return this;
+    }
+}
+
+</script>
+
+<center><button class="button1" onclick="aktivFunction()"> Skift blog </button>
+
+
+</body>
+</html>
